@@ -1,0 +1,70 @@
+.sub-section {
+  background-image:url(../assets/vegetables.jpeg);
+  background-size: cover;
+  border-radius: 40px;
+  margin-top: 8px;
+  height: 600px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.sub-header-name {
+  font-size: 50px;
+  color: white;
+  margin: 0;
+}
+.sub-head-text {
+  color: lightgreen;
+  display: block;
+  font-size: 40px;
+}
+
+.para {
+  margin: 17px 0px;
+  font-size: 20px;
+  color: white;
+  max-width: 700px;
+}
+
+.shop-now-btn {
+  padding: 7px 20px;
+  height: 50px;
+  width: 140px;
+  font-size: 17px;
+  background-color: lightgreen;
+  color: white;
+  cursor: pointer;
+  border-radius: 13px;
+  border: none;
+  margin: 10px 10px;
+}
+
+.contact-now-btn {
+  padding: 7px 20px;
+  height: 50px;
+  width: 140px;
+  font-size: 17px;
+  background-color: rgba(255, 255, 255,0.2);
+  color: white;
+  cursor: pointer;
+  border-radius: 13px;
+  border: 2px solid white; 
+  margin: 10px 10px; 
+}
+.contact-now-btn:hover {
+    background-color: rgba(255, 255, 255,0.4);
+    transition: 0.3s;
+}
+
+@media (max-width:768px) {
+    .sub-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        padding: 0px 15px;
+        }
+}
+
