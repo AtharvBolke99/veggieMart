@@ -1,0 +1,74 @@
+.vegetables-card {
+  background-color: white;
+  width: 300px;
+  height: 400px;
+  border-radius: 10px;
+  margin: 40px 20px;
+  box-shadow: 0px 0px 7px black;
+  position: relative;
+}
+
+.map-veggis {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.img-vegetable {
+  width: 300px;
+  border-radius: 10px 10px 0px 0px;
+  height: 200px;
+}
+
+.title-veggis {
+  color: lightgreen;
+}
+.price {
+  color: rgb(255, 132, 0);
+}
+.price-title-box {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.subtitle {
+  text-align: center;
+  margin: 5px 10px;
+  color: gray;
+}
+
+.btn-vegetable {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-veggis {
+  padding: 10px 20px;
+  font-size: 15px;
+  width: 200px;
+  margin-top: 20px;
+  background-color: #3d8f5a;
+  color: white;
+  border: none;
+  border-radius: 10px;
+}
+
+.label {
+    position: absolute;
+    top: 3px;
+    left: 5px;
+    color: white;
+    background-color: lightgreen;
+    padding: 8px 8px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.label-img {
+    margin-right: 5px;
+}

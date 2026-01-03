@@ -21,7 +21,7 @@ function Footer() {
           <Link to="/" className="footer-menu">
             Home
           </Link>
-          <Link to="/vegetable" className="footer-menu">
+          <Link to="/vegetables" className="footer-menu">
             Vegetable
           </Link>
           <Link to="/contact" className="footer-menu">
