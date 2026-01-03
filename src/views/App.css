@@ -1,7 +1,6 @@
 .sub-section {
   background-image:url(../assets/vegetables.jpeg);
   background-size: cover;
-  border-radius: 40px;
   margin-top: 8px;
   height: 600px;
   width: 100%;
@@ -66,5 +65,25 @@
         align-items: start;
         padding: 0px 15px;
         }
+}
+
+.images-services {
+  color: white;
+  background-color: lightgreen;
+  padding: 10px;
+  border-radius: 8px;
+  margin: 0px 20px;
+  width: 70px;
+}
+
+.our-services {
+  background-color: rgb(251, 242, 225);
+  padding: 50px 40px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.sub-footer {
+  background-color: green;
 }
 

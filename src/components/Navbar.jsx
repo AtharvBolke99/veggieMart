@@ -15,11 +15,11 @@ function Navbar() {
         <Link to="/vegetable" className="menu">
           Vegetable
         </Link>
-        <Link to="/cart" className="menu">
-          Cart
-        </Link>
         <Link to="/contact" className="menu">
           Contact Us
+        </Link>
+        <Link to="/cart" className="menu">
+          Cart
         </Link>
       </div>
     </div>
