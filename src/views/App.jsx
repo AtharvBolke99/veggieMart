@@ -1,8 +1,10 @@
 import React from "react";
 import "./App.css";
+import { Link } from "react-router";
 import Navbar from "../components/Navbar";
-import { Leaf } from "lucide-react";
+import { Leaf, Truck, ShieldCheck, Clock, Phone, Mail, MapPin } from "lucide-react";
 import Services from "../components/Services";
+import Footer from "../components/Footer";
 
 function App() {
   return (
@@ -33,32 +35,35 @@ function App() {
         />
 
         <Services
-          img={<Leaf className="images-services" />}
+          img={<Truck className="images-services" />}
           title="Free Delivery"
           description="Free delivery on orders over $50 within city limits"
         />
 
         <Services
-          img={<Leaf className="images-services" />}
+          img={<ShieldCheck className="images-services" />}
           title="Quality Guaranteed"
           description="Not satisfied? Get a full refund, no questions asked"
         />
 
         <Services
-          img={<Leaf className="images-services" />}
+          img={<Clock className="images-services" />}
           title="Same Day Delivery"
           description="Order before 2pm for same-day delivery service"
         />
       </div>
 
       <div className="sub-footer">
-        <h2>Ready to Eat Fresh?</h2>
-        <p>
+        <h2 className="title-sub-footer">Ready to Eat Fresh?</h2>
+        <p className="sub-footer-paragraph">
           Join thousands of happy customers who enjoy farm-fresh vegetables
           delivered right to their doorstep.
         </p>
-        <button>Start Shopping  →</button>
+        <button className="btn-footer">Start Shopping →</button>
       </div>
+
+      <Footer />
+
     </div>
   );
 }

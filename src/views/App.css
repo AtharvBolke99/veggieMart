@@ -1,5 +1,5 @@
 .sub-section {
-  background-image:url(../assets/vegetables.jpeg);
+  background-image: url(../assets/vegetables.jpeg);
   background-size: cover;
   margin-top: 8px;
   height: 600px;
@@ -45,26 +45,16 @@
   height: 50px;
   width: 140px;
   font-size: 17px;
-  background-color: rgba(255, 255, 255,0.2);
+  background-color: rgba(255, 255, 255, 0.2);
   color: white;
   cursor: pointer;
   border-radius: 13px;
-  border: 2px solid white; 
-  margin: 10px 10px; 
+  border: 2px solid white;
+  margin: 10px 10px;
 }
 .contact-now-btn:hover {
-    background-color: rgba(255, 255, 255,0.4);
-    transition: 0.3s;
-}
-
-@media (max-width:768px) {
-    .sub-section {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: start;
-        padding: 0px 15px;
-        }
+  background-color: rgba(255, 255, 255, 0.4);
+  transition: 0.3s;
 }
 
 .images-services {
@@ -81,9 +71,53 @@
   padding: 50px 40px;
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 .sub-footer {
-  background-color: green;
+  background-color: #3d8f5a;
+  padding: 70px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
+.title-sub-footer {
+  color: white;
+  font-size: 35px;
+  margin: 0px;
+  margin-bottom: 20px;
+}
+
+.sub-footer-paragraph {
+  color: white;
+  text-align: center;
+  width: 650px;
+}
+
+.btn-footer {
+  padding: 13px 25px;
+  border: none;
+  background-color: orange;
+  color: white;
+  font-size: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .sub-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 0px 15px;
+  }
+  .sub-footer-paragraph {
+    width: 300px;
+  }
+
+}
