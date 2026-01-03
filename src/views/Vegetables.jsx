@@ -2,11 +2,12 @@ import React, { useState } from "react";
 import "../views/Vegetables.css";
 import Navbar from "../components/Navbar";
 import vegetables from "../configs/Vegetables.js";
-import { Leaf } from "lucide-react";
+import { Key, Leaf } from "lucide-react";
 import Footer from "../components/Footer.jsx"
 
 function Vegetables() {
   const [veggis, setVeggis] = useState(vegetables);
+  const [addCart,setAddCart] = useState([]);
   return (
     <div className="vegetable-box">
       <Navbar />
@@ -26,7 +27,11 @@ function Vegetables() {
                   <Leaf size={20} className="label-img" />
                   Organic
                 </p>
-                <button className="btn-veggis">Add to cart</button>
+                <button className="btn-veggis" onClick={
+                  () => {
+                    
+                  }
+                }>Add to cart</button>
               </div>
             </div>
           );
