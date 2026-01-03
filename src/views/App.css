@@ -71,7 +71,7 @@
   padding: 50px 40px;
   display: flex;
   justify-content: space-evenly;
-  flex-wrap: wrap;
+  flex-wrap: wrap; 
 }
 
 .sub-footer {
@@ -82,6 +82,7 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+
 }
 
 .title-sub-footer {
