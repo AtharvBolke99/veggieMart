@@ -28,7 +28,7 @@ function Cart() {
         <div className="m-10">
           {cart.map((itemcart) => {
             return (
-              <div className="bg-white my-5 flex items-center justify-evenly p-3 border-[1px] rounded-2xl">
+              <div className="bg-white my-5 flex items-center justify-evenly p-3 border rounded-2xl">
                 <img src={itemcart.img} className="w-20" alt="vegetable-img" />
                 <div>
                   <p className="text-xl font-bold">{itemcart.title}</p>
