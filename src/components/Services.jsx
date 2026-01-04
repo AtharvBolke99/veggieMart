@@ -1,12 +1,11 @@
 import React from "react";
 import { Leaf } from "lucide-react";
-import "./Services.css";
 
 function Services({ img, title, description }) {
   return (
-      <div className="services">
+      <div className="bg-white w-[270px] p-4 flex items-center rounded-xl m-2.5">
         {img}
-        <div className="servies-body">
+        <div>
           <h3>{title}</h3>
           <p>{description}</p>
         </div>

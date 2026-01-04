@@ -1,5 +1,4 @@
 import React from "react";
-import "../views/Cart.css";
 import Navbar from "../components/Navbar";
 import { useState } from "react";
 
@@ -8,8 +7,8 @@ function Cart() {
   return (
     <div>
       <Navbar />
-      <div className="cart">
-        <h2 className="shopping-header">Shopping Cart</h2>
+      <div>
+        <h2 className="text-3xl text-gray-500 text-center">Shopping Cart</h2>
       </div>
     </div>
   );
