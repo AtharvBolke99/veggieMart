@@ -9,13 +9,13 @@ function App() {
   return (
     <div>
       <Navbar />
-      <div className="bg-[url(../assets/vegetables.jpeg)] bg-cover mt-2 h-[600px] w-full flex justify-evenly items-center">
+      <div className="bg-[url('../src/assets/vegetables.jpeg')] bg-cover mt-2 h-150 w-full flex justify-evenly items-center">
         <div>
-          <h2 className="text-5xl text-white m-0">
+          <h2 className="text-5xl font-bold text-white m-0 my-2">
             Fresh Vegetables
-            <span className="text-green-300 block text-4xl">Delivered Daily</span>
+            <span className="text-green-300 font-bold block text-4xl">Delivered Daily</span>
           </h2>
-          <p className="m-4.5 text-xl text-white max-w-[700px]">
+          <p className="my-5 text-xl text-white max-w-175">
             From our local farms to your table. Experience the freshest, most
             nutritious vegetables handpicked for you and your family.
           </p>
@@ -28,33 +28,33 @@ function App() {
 
       <div className="bg-[#fbf2e1] p-12 px-10 flex justify-evenly flex-wrap">
         <Services
-          img={<Leaf className="text-white bg-green-300 p-2.5 rounded-lg m-0 mx-5 w-[70px]" />}
+          img={<Leaf size={50} className="text-white bg-green-300 p-2.5 rounded-lg m-0 mx-5 w-20" />}
           title="100% Oraganic"
           description="Fresh from certified organic farms with no pesticides"
         />
 
         <Services
-          img={<Truck className="text-white bg-green-300 p-2.5 rounded-lg m-0 mx-5 w-[70px]" />}
+          img={<Truck size={50}  className="text-white bg-green-300 p-2.5 rounded-lg m-0 mx-5 w-20" />}
           title="Free Delivery"
           description="Free delivery on orders over $50 within city limits"
         />
 
         <Services
-          img={<ShieldCheck className="text-white bg-green-300 p-2.5 rounded-lg m-0 mx-5 w-[70px]" />}
+          img={<ShieldCheck size={50}  className="text-white bg-green-300 p-2.5 rounded-lg m-0 mx-5 w-20" />}
           title="Quality Guaranteed"
           description="Not satisfied? Get a full refund, no questions asked"
         />
 
         <Services
-          img={<Clock className="text-white bg-green-300 p-2.5 rounded-lg m-0 mx-5 w-[70px]" />}
+          img={<Clock size={50}  className="text-white bg-green-300 p-2.5 rounded-lg m-0 mx-5 w-20" />}
           title="Same Day Delivery"
           description="Order before 2pm for same-day delivery service"
         />
       </div>
 
       <div className="bg-[#3d8f5a] p-18 px-8 flex flex-col justify-center items-center flex-wrap">
-        <h2 className="text-white text-4xl m-0 mb-5">Ready to Eat Fresh?</h2>
-        <p className="text-white text-center w-[650px]">
+        <h2 className="text-white text-4xl m-0 mb-5 font-semibold">Ready to Eat Fresh?</h2>
+        <p className="text-white text-center w-162.5 my-5">
           Join thousands of happy customers who enjoy farm-fresh vegetables
           delivered right to their doorstep.
         </p>
