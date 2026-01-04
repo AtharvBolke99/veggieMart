@@ -1,9 +1,14 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router";
 import { ShoppingCart } from "lucide-react";
 
-function Navbar() {
-  const [cart, setCart] = useState(["test"]);
+function Navbar(refreshCart) {
+  const [cart, setCart] = useState([]);
+
+  useEffect(() => {
+    const exsistingCard = JSON.parse(localStorage.getItem("cartItems")) || [];
+    setCart(exsistingCard);
+  }, [refreshCart]);
   return (
     <div className="m-1.5 flex justify-between items-center shadow-[0_0_7px_rgb(145,231,145)] p-0 px-3.5 rounded-full bg-white sticky top-2 h-15 max-w-full z-10">
       <h2 className="text-xl font-semibold">
