@@ -6,7 +6,7 @@ import Footer from "../components/Footer.jsx"
 
 function Vegetables() {
   const [veggis, setVeggis] = useState(vegetables);
-  const [addCart,setAddCart] = useState([]);
+  const [addCart, setAddCart] = useState([""]);
   return (
     <div className="vegetable-box">
       <Navbar />
@@ -27,7 +27,7 @@ function Vegetables() {
                   Organic
                 </p>
                 <button className="p-2.5 px-5 text-base w-50 mt-5 bg-[#3d8f5a] text-white border-none rounded-xl cursor-pointer" onClick={
-                  () => {
+                  (items) => {                
                     
                   }
                 }>Add to cart</button>
