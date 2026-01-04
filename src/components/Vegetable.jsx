@@ -1,9 +1,11 @@
 import React from "react";
 import { Key, Leaf } from "lucide-react";
+import { useState } from "react";
 
 function Vegetable({ id, img, title, subtitle, price, addToCart }) {
+  const [quantity, setQuantity] = useState(0);
   return (
-    <div className="bg-white w-75 h-100 rounded-xl m-10 mx-5 shadow-black shadow-sm relative">
+    <div className="bg-white w-75 h-110 rounded-xl m-10 mx-5 shadow-black shadow-sm relative">
       <img src={img} className="w-75 rounded-t-xl h-50" />
       <div className="flex justify-around items-center">
         <h2 className="text-green-300 font-bold text-2xl my-3">{title}</h2>
@@ -15,11 +17,42 @@ function Vegetable({ id, img, title, subtitle, price, addToCart }) {
           <Leaf size={20} className="mr-1.25" />
           Organic
         </p>
+        <div className="flex justify-evenly items-center">
+          <p
+            className="mx-2 text-2xl"
+            onClick={() => {
+              if (quantity > 1) {
+                setQuantity(quantity - 1);
+              }
+            }}
+          >
+            -
+          </p>
+          <p className="mx-2 text-2xl">{quantity}</p>
+          <p
+            className="mx-2 text-2xl"
+            onClick={() => {
+              if (quantity < 11) {
+                setQuantity(quantity + 1);
+              }
+            }}
+          >
+            +
+          </p>
+        </div>
+        <p></p>
         <button
           className="p-2.5 px-5 text-base w-50 mt-5 bg-[#3d8f5a] text-white border-none rounded-xl cursor-pointer"
           onClick={(items) => {
-            addToCart({ id, img, title, subtitle, price, addToCart });
-            localStorage
+            addToCart({
+              id,
+              img,
+              title,
+              subtitle,
+              price,
+              addToCart,
+              quantity,
+            });
           }}
         >
           Add to cart

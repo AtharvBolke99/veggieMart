@@ -44,6 +44,8 @@ function Vegetables() {
         })}
       </div>
       <Footer />
+
+      <Toaster />
     </div>
   );
 }
