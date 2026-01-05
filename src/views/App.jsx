@@ -1,7 +1,15 @@
 import React from "react";
 import { Link } from "react-router";
 import Navbar from "../components/Navbar";
-import { Leaf, Truck, ShieldCheck, Clock, Phone, Mail, MapPin } from "lucide-react";
+import {
+  Leaf,
+  Truck,
+  ShieldCheck,
+  Clock,
+  Phone,
+  Mail,
+  MapPin,
+} from "lucide-react";
 import Services from "../components/Services";
 import Footer from "../components/Footer";
 
@@ -13,7 +21,9 @@ function App() {
         <div>
           <h2 className="text-5xl font-bold text-white m-0 my-2">
             Fresh Vegetables
-            <span className="text-green-300 font-bold block text-4xl">Delivered Daily</span>
+            <span className="text-green-300 font-bold block text-4xl">
+              Delivered Daily
+            </span>
           </h2>
           <p className="my-5 text-xl text-white max-w-175">
             From our local farms to your table. Experience the freshest, most
@@ -21,48 +31,81 @@ function App() {
           </p>
         </div>
         <div>
-          <button className="p-2 px-5 h-12 w-36 text-lg bg-green-300 text-white cursor-pointer rounded-lg border-none m-2.5">Shop Now</button>
-          <Link to="/contact"><button className="p-2 px-5 h-12 w-36 text-lg bg-white/20 text-white cursor-pointer rounded-lg border-2 border-white m-2.5 hover:bg-white/40 transition duration-300">Contact Us</button></Link>
+          <Link to="/vegetables">
+          <button className="p-2 px-5 h-12 w-36 text-lg bg-green-300 text-white cursor-pointer rounded-lg border-none m-2.5">
+            Shop Now
+          </button>
+          </Link>
+          <Link to="/contact">
+            <button className="p-2 px-5 h-12 w-36 text-lg bg-white/20 text-white cursor-pointer rounded-lg border-2 border-white m-2.5 hover:bg-white/40 transition duration-300">
+              Contact Us
+            </button>
+          </Link>
         </div>
       </div>
 
       <div className="bg-[#fbf2e1] p-12 px-10 flex justify-evenly flex-wrap">
         <Services
-          img={<Leaf size={50} className="text-white bg-green-300 p-2.5 rounded-lg m-0 mx-5 w-20" />}
+          img={
+            <Leaf
+              size={50}
+              className="text-white bg-green-300 p-2.5 rounded-lg m-0 mx-5 w-20"
+            />
+          }
           title="100% Oraganic"
           description="Fresh from certified organic farms with no pesticides"
         />
 
         <Services
-          img={<Truck size={50}  className="text-white bg-green-300 p-2.5 rounded-lg m-0 mx-5 w-20" />}
+          img={
+            <Truck
+              size={50}
+              className="text-white bg-green-300 p-2.5 rounded-lg m-0 mx-5 w-20"
+            />
+          }
           title="Free Delivery"
           description="Free delivery on orders over $50 within city limits"
         />
 
         <Services
-          img={<ShieldCheck size={50}  className="text-white bg-green-300 p-2.5 rounded-lg m-0 mx-5 w-20" />}
+          img={
+            <ShieldCheck
+              size={50}
+              className="text-white bg-green-300 p-2.5 rounded-lg m-0 mx-5 w-20"
+            />
+          }
           title="Quality Guaranteed"
           description="Not satisfied? Get a full refund, no questions asked"
         />
 
         <Services
-          img={<Clock size={50}  className="text-white bg-green-300 p-2.5 rounded-lg m-0 mx-5 w-20" />}
+          img={
+            <Clock
+              size={50}
+              className="text-white bg-green-300 p-2.5 rounded-lg m-0 mx-5 w-20"
+            />
+          }
           title="Same Day Delivery"
           description="Order before 2pm for same-day delivery service"
         />
       </div>
 
       <div className="bg-[#3d8f5a] p-18 px-8 flex flex-col justify-center items-center flex-wrap">
-        <h2 className="text-white text-4xl m-0 mb-5 font-semibold">Ready to Eat Fresh?</h2>
+        <h2 className="text-white text-4xl m-0 mb-5 font-semibold">
+          Ready to Eat Fresh?
+        </h2>
         <p className="text-white text-center w-162.5 my-5">
           Join thousands of happy customers who enjoy farm-fresh vegetables
           delivered right to their doorstep.
         </p>
-        <Link to="/vegetables"><button className="p-2.5 px-5 text-lg bg-green-300 text-white cursor-pointer rounded-lg border-none">Start Shopping →</button></Link>
+        <Link to="/vegetables">
+          <button className="p-2.5 px-5 text-lg bg-green-300 text-white cursor-pointer rounded-lg border-none">
+            Start Shopping →
+          </button>
+        </Link>
       </div>
 
       <Footer />
-
     </div>
   );
 }

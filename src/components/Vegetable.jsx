@@ -19,7 +19,7 @@ function Vegetable({ id, img, title, subtitle, price, addToCart }) {
         </p>
         <div className="flex justify-evenly items-center">
           <p
-            className="mx-2 text-2xl"
+            className="mx-2 text-2xl cursor-pointer"
             onClick={() => {
               if (quantity > 1) {
                 setQuantity(quantity - 1);
@@ -30,7 +30,7 @@ function Vegetable({ id, img, title, subtitle, price, addToCart }) {
           </p>
           <p className="mx-2 text-2xl">{quantity}</p>
           <p
-            className="mx-2 text-2xl"
+            className="mx-2 text-2xl cursor-pointer"
             onClick={() => {
               if (quantity < 11) {
                 setQuantity(quantity + 1);
